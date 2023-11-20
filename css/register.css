@@ -1,0 +1,233 @@
+
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(./font/Poppins-Light.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(241, 164, 164);
+    display: flex;
+}
+
+.container .login-container{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(70, 80, 80);
+    transition: 2s width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-container .login-center{
+    width: 30%;
+    height: 270px;
+    /* background-color: rgba(45, 49, 49, 0.781); */
+    border-radius: 20px;
+    position: relative;
+    filter: blur(0px);
+    transition: 2s width 
+}
+
+.login-center .login-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title h1{
+    font-size: 30px;
+    font-family: poppins;
+    color: rgb(222, 248, 222);
+}
+
+.login-center form{
+    width: 90%;
+    height: 160px;
+    /* background-color: chartreuse; */
+    margin: auto;
+    align-items: center;
+}
+
+.login-center form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+
+}
+
+.login-center form input[type="submit"]{
+    width: 100%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 157, 224);
+    color: white;
+    
+}
+
+.login-center .social-container{
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -60px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-container .fc-icon{
+    background-color: rgb(255, 255, 255);
+}
+
+.social-container .gl-icon{
+    background-color: rgb(255, 255, 255);
+}
+.social-container .icons{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.social-container .icons img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .login-container.active{
+    width: 20%;
+    transition: 2s width filter;
+    
+}
+
+.login-container.active .login-center{
+    width: 70%;
+    filter: blur(5px);
+    transition: 2s width;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTER CONTAINER */
+
+.container .register-container{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(228, 230, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s width;
+}
+
+.register-container .register-center{
+    width: 80%;
+    height: 60%;
+    position: relative;
+    filter: blur(5px);
+    /* border: 2px solid rgb(151, 177, 241); */
+    border-radius: 10px;
+    /* background-color: cadetblue; */
+}
+
+.register-center .register-title{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+}
+
+.register-title h1{
+    font-size: 30px;
+    font-family: poppins-light;
+    color: rgb(87, 17, 17);
+    margin-top: 10px;
+}
+
+.register-center form{
+    width: 90%;
+    height: 80%;
+    /* background-color: chocolate; */
+    margin: auto;
+}
+
+.register-center form .input-container{
+    width: 100%;
+    height: 70px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-container input{
+    width: 32%;
+    /* height: 0; */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.register-center .submit-Btn{
+    width: 90%;
+    /* height: 30px; */
+    /* background-color: aqua; */
+    position: absolute;
+    bottom: 25px;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register-center .submit-Btn input{
+    padding: 12px 40px;
+    border-radius: 5px;
+    background-color: rgb(3, 101, 167);
+    color: white;
+    float: right;
+}
+
+
+.container .register-container.active{
+    width: 80%;
+    transition: 2s width;
+    
+}
+
+.register-container.active .register-center{
+    filter: blur(0);
+}
