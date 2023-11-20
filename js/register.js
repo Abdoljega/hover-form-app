@@ -1,5 +1,7 @@
 
 let registerSite = document.querySelector('.register-container')
+let signUp = document.querySelector('#signUp')
+let login = document.querySelector('#login')
 let loginSite = document.querySelector('.login-container')
 
 console.log('Hello')
@@ -15,3 +17,15 @@ loginSite.addEventListener('mouseenter', ()=>{
     loginSite.classList.remove('active')
 })
 
+signUp.addEventListener('click', e=>{
+    registerSite.classList.add('active')
+    loginSite.classList.remove('active')
+    console.log('Register')
+})
+
+login.addEventListener('click', e=>{
+    registerSite.classList.remove('active')
+    loginSite.classList.add('active')
+
+    console.log('login')
+})

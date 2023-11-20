@@ -17,6 +17,10 @@
     outline: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 main{
     width: 100vw;
     height: 100vh;
@@ -37,6 +41,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
@@ -132,7 +137,28 @@ main{
     transition: 2s width;
 }
 
+.sign-up-site{
+    width: fit-content;
+    /* height: 30px; */
+    /* background-color: white; */
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+.sign-up-site p{
+    padding: 5px 10px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: poppins-light, sans-serif;
+}
+
+.sign-up-site p small{
+    font-size: 16px;
+    color: rgb(132, 161, 240);
+    cursor: pointer;
+}
 
 
 
@@ -158,7 +184,7 @@ main{
 
 .register-container .register-center{
     width: 80%;
-    height: 60%;
+    height: 300px;
     position: relative;
     filter: blur(5px);
     /* border: 2px solid rgb(151, 177, 241); */
@@ -181,7 +207,7 @@ main{
 
 .register-center form{
     width: 90%;
-    height: 80%;
+    height: 100%;
     /* background-color: chocolate; */
     margin: auto;
 }
@@ -193,6 +219,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: blue; */
 }
 
 .input-container input{
@@ -203,23 +230,24 @@ main{
 }
 
 .register-center .submit-Btn{
-    width: 90%;
-    /* height: 30px; */
-    /* background-color: aqua; */
-    position: absolute;
+    width: 40%;
+    /* position: absolute; */
     bottom: 25px;
-    margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    float: right;
+    /* left: 50%;
+    transform: translateX(-50%); */
 }
 
 .register-center .submit-Btn input{
-    padding: 12px 40px;
+    padding: 12px 10px;
     border-radius: 5px;
     background-color: rgb(3, 101, 167);
     color: white;
     float: right;
+    transition: 2s;
 }
+
+
 
 
 .container .register-container.active{
@@ -228,6 +256,126 @@ main{
     
 }
 
+.register-container.active .register-center form .login-site{
+    width: fit-content;
+    /* height: 30px; */
+    /* background-color: rgb(155, 44, 44); */
+    color: rgb(43, 42, 42);
+    /* position: absolute; */
+    /* left: 0px; */
+}
+
+.register-container.active form .login-site p{
+    width: 100%;
+    height: fit-content;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-family: poppins-light;
+    /* color: blue; */
+    /* background-color: rgb(145, 25, 25); */
+}
+
+.register-container.active form .login-site p small{
+    color: blue;
+    font-size: 17px;
+    cursor: pointer;
+}
+
 .register-container.active .register-center{
     filter: blur(0);
 }
+
+.register-container.active .register-center .submit-Btn input{
+    padding: 12px 40px;
+    transition: 2s;
+}
+
+@media screen and (max-width : 787px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(241, 164, 164);
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container .login-container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(70, 80, 80);
+        transition: 2s width;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .login-container .login-center{
+        width: 70%;
+        height: 270px;
+        /* background-color: rgba(45, 49, 49, 0.781); */
+        border-radius: 20px;
+        position: relative;
+        filter: blur(0px);
+        transition: 2s width 
+    }
+
+
+    .container .login-container.active{
+        width: 100%;
+        transition: 2s width filter;
+        
+    }
+
+
+
+
+
+
+
+
+    .container .register-container{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(228, 230, 228);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transition: 2s;
+        
+        top: 100%;
+    }
+    
+    .register-container .register-center{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        filter: blur(5px);
+        /* border: 2px solid rgb(151, 177, 241); */
+        border-radius: 10px;
+        /* background-color: cadetblue; */
+    }
+
+
+
+    .container .register-container.active{
+        width: 100%;
+        top: 0;
+        transition: 2s top;
+        position: absolute;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
