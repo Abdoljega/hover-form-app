@@ -430,12 +430,12 @@ main{
 
     .container .register-container.active .register-center form #zipcode{
         width: 48%;
-        margin: 15px 6px;
+        margin: 15px 0;
     }
 
     .container .register-container.active .register-center form input[type="password"]{
         width: 48%;
-        margin: 15px 3px;
+        margin: 15px 0;
     }
 
     .container .register-container .register-center form input{
@@ -454,7 +454,7 @@ main{
 
     .container .register-container .register-center form input[type="password"]{
         width: 48%;
-        margin: 15px 3px;
+        margin: 15px 0;
     }
 
     .register-container.active .register-center{
