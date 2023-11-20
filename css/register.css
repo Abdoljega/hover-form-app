@@ -385,6 +385,88 @@ main{
         position: absolute;
         
     }
+
+    .container .register-container.active .register-center{
+        height: 90%;
+    }
+     .register-container .register-center{
+        width: 95%;
+        height: 90%;
+        position: relative;
+        filter: blur(5px);
+        /* border: 2px solid rgb(151, 177, 241); */
+        border-radius: 10px;
+        overflow-y: auto;
+        /* background-color: cadetblue; */
+    }
+
+    .register-container .register-center::-webkit-scrollbar{
+        width: 3px;
+    }
+
+    .register-container .register-center::-webkit-scrollbar-thumb{
+        background-color: rgb(218, 208, 208);
+    }
+    .register-center form{
+        width: 95%;
+        height: 100%;
+        /* background-color: chocolate; */
+        margin: auto;
+    }
+    .register-container.active .register-center form{
+        width: 95%;
+        height: 100%;
+        /* background-color: chocolate; */
+        margin: auto;
+    }
+    .container .register-container.active .register-center form input{
+        width: 98%;
+        margin: 15px 2px;
+    }
+
+    .container .register-container.active .register-center form input[type="number"]{
+        width: 48%;
+    }
+
+    .container .register-container.active .register-center form #zipcode{
+        width: 48%;
+        margin: 15px 6px;
+    }
+
+    .container .register-container.active .register-center form input[type="password"]{
+        width: 48%;
+        margin: 15px 3px;
+    }
+
+    .container .register-container .register-center form input{
+        width: 98%;
+        margin: 15px 2px;
+    }
+
+    .container .register-container .register-center form input[type="number"]{
+        width: 48%;
+       
+    }
+
+    .container .register-container .register-center form #zipcode{
+        width: 48%;
+    }
+
+    .container .register-container .register-center form input[type="password"]{
+        width: 48%;
+        margin: 15px 3px;
+    }
+
+    .register-container.active .register-center{
+        width: 90%;
+        height: 80%;
+        position: relative;
+        filter: blur(0px);
+        /* border: 2px solid rgb(151, 177, 241); */
+        border-radius: 10px;
+        overflow-y: auto;
+        /* background-color: cadetblue; */
+    }
 }
 
 
