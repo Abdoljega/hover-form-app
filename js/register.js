@@ -19,13 +19,13 @@ loginSite.addEventListener('mouseenter', ()=>{
 
 signUp.addEventListener('click', e=>{
     registerSite.classList.add('active')
-    loginSite.classList.remove('active')
+    loginSite.classList.add('active')
     console.log('Register')
 })
 
 login.addEventListener('click', e=>{
     registerSite.classList.remove('active')
-    loginSite.classList.add('active')
+    loginSite.classList.remove('active')
 
     console.log('login')
 })
